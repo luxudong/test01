@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/text_blue"
+            android:id="@+id/linearLayout">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_discusslist_white"
+                android:adjustViewBounds="true"
+                android:maxHeight="48dp"
+                android:padding="10dp"
+                android:scaleType="fitCenter"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text222222222222222"
+                android:id="@+id/topichome_projectname"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/text_white"/>
+    </LinearLayout>
+
+    <com.innoxyz.InnoXYZAndroid.ui.customviews.PullToRefreshListView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/topichome_itemlist"
+            android:layout_below="@id/linearLayout"
+            android:layout_above="@+id/topichome_bottom"
+            android:clickable="false"
+            android:divider="@color/none"/>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/topichome_bottom"
+        android:layout_alignParentBottom="true">
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/topichome_bottom_button">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:background="@drawable/clickable_background_blue"
+            android:clickable="true"
+            android:id="@+id/topichome_reply"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/icon_discusslist_white"
+                android:adjustViewBounds="true"
+                android:maxHeight="48dp"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="回复讨论"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/text_white"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_height="wrap_content"
+            android:layout_width="1dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:background="@drawable/clickable_background_blue"
+            android:clickable="true"
+            android:id="@+id/topichome_goto_project"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="前往所在项目"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/text_white"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:layout_weight="2"/>
+
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@drawable/icon_goto"
+                android:adjustViewBounds="true"
+                android:maxHeight="48dp"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/topichome_bottom_input"
+        android:visibility="gone"
+        android:background="@color/background_lightgray">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/topichome_bottom_edittext"
+            android:layout_weight="9"
+            android:singleLine="false"/>
+
+        <ImageView
+            android:layout_height="48dp"
+            android:layout_width="48dp"
+            android:id="@+id/topichome_bottom_send"
+            android:src="@drawable/send"
+            android:enabled="false"
+            android:layout_gravity="center"
+            android:layout_weight="0"
+            />
+    </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ItemOuterLayout">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/ItemInnerLayout">
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="New Text22222222222222222222222222"
+                android:id="@+id/document_item_name"
+                style="@style/ItemName"
+
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:singleLine="true"
+                android:maxWidth="128dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/document_item_size"
+                style="@style/ItemComment"
+                android:layout_below="@+id/document_item_name"
+
+
+                android:textStyle="bold"
+                android:textSize="14sp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/document_item_creator"
+                style="@style/ItemComment"
+                android:layout_below="@+id/document_item_size"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"/>
+    </RelativeLayout>
+</RelativeLayout>

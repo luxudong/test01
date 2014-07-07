@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.innoxyz.InnoXYZAndroid" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:name="com.innoxyz.InnoXYZAndroid.global.InnoXYZApp"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.innoxyz.InnoXYZAndroid.ui.activities.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.innoxyz.InnoXYZAndroid.ui.activities.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:icon="@drawable/icon"
+            android:theme="@style/com.innoxyz.InnoXYZAndroid.app_theme"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.innoxyz.InnoXYZAndroid.ui.activities.DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:icon="@drawable/icon"
+            android:parentActivityName="com.innoxyz.InnoXYZAndroid.ui.activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/com.innoxyz.InnoXYZAndroid.app_theme"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.innoxyz.InnoXYZAndroid.ui.activities.NewActivity"
+            android:label="@string/title_activity_new"
+            android:icon="@drawable/icon"
+            android:parentActivityName="com.innoxyz.InnoXYZAndroid.ui.activities.DetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/com.innoxyz.InnoXYZAndroid.app_theme"
+            android:windowSoftInputMode="adjustResize" >>
+        </activity>
+
+
+        <service android:name="com.innoxyz.InnoXYZAndroid.ui.services.GetUnreadNumService" >
+        </service>
+
+
+    </application>
+
+
+
+</manifest>

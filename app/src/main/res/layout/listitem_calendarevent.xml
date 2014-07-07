@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认日历："
+            android:layout_gravity="bottom"
+            android:textColor="@color/android_blue"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="点击获取相应默认日历"
+            android:id="@+id/calendarEvent_default"
+            android:layout_gravity="bottom"
+            android:textColor="@color/text_white"
+            android:singleLine="true"
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订阅日历："
+            android:layout_gravity="bottom"
+            android:textColor="@color/android_blue"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" 点击获取相应订阅日历"
+            android:id="@+id/calendarEvent_Subscribe"
+
+            android:layout_gravity="bottom"
+            android:textColor="@color/text_white"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

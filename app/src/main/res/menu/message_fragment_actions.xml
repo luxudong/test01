@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- Add, should appear as action button -->
+    <item android:id="@+id/action_add"
+        android:icon="@drawable/add_message"
+        android:title="@string/add"
+        android:showAsAction="always"
+        />
+    <item android:id="@+id/action_sent"
+        android:icon="@drawable/action_outbox"
+        android:title="发件箱"
+        android:showAsAction="always"/>
+
+
+
+
+
+</menu>

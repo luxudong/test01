@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="1dp"
+                android:background="@color/none"
+                android:clickable="true">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/clickable_background_gray">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/message_sender_title"
+                android:id="@+id/message_item_usernameTitle"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:textColor="@color/text_blue"
+
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/message_item_username"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="false"
+                android:singleLine="true"
+                android:textColor="@color/text_dark"
+                android:layout_centerVertical="true"
+                android:layout_alignTop="@id/message_item_usernameTitle"
+                android:layout_toRightOf="@id/message_item_usernameTitle"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主　题："
+                android:id="@+id/message_item_subjectTitle"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:textColor="@color/text_blue"
+
+                android:layout_alignParentLeft="false"
+                android:layout_below="@id/message_item_usernameTitle"
+                android:layout_alignLeft="@id/message_item_usernameTitle"
+                android:paddingBottom="8dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/message_item_subject"
+                android:singleLine="true"
+                android:textColor="@color/text_gray"
+                android:layout_alignParentLeft="false"
+                android:layout_alignTop="@id/message_item_subjectTitle"
+                android:layout_toRightOf="@id/message_item_subjectTitle"/>
+
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/message_item_date"
+                style="@style/ItemComment"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="false"
+                android:layout_marginRight="6dp"
+            android:textStyle="italic"
+                android:layout_alignBottom="@id/message_item_subjectTitle"
+                android:layout_marginBottom="0dp"/>
+    </RelativeLayout>
+</RelativeLayout>

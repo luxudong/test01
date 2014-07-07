@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_white">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/ItemOuterLayout"
+            android:layout_below="@+id/linearLayout"
+            android:id="@+id/message_home_senderBlock">
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/ItemInnerLayout">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/message_sender_title"
+                    android:id="@+id/message_home_nameTitle"
+                    style="@style/ItemName"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/message_home_nameText"
+                    android:layout_toRightOf="@id/message_home_nameTitle"
+                    android:layout_alignTop="@id/message_home_nameTitle"
+                    android:textColor="@color/text_dark"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/ItemOuterLayout"
+            android:layout_below="@id/message_home_senderBlock"
+            android:id="@+id/message_home_subjectBlock">
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                style="@style/ItemInnerLayout">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="主 题："
+                    android:id="@+id/message_home_subjectTitle"
+                    style="@style/ItemName"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/message_home_subject"
+                    android:layout_toRightOf="@+id/message_home_subjectTitle"
+                    android:layout_alignTop="@+id/message_home_subjectTitle"
+                    android:textColor="@color/text_dark"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/message_home_content"
+            android:layout_below="@id/message_home_subjectBlock"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/text_dark"
+            android:text="New TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew TextNew Text"
+            android:singleLine="false"/>
+
+
+</RelativeLayout>

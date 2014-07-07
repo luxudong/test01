@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                style="@style/ItemOuterLayout"
+                >
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativelayout_sub"
+            style="@style/ItemInnerLayout">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/topichome_item_username"
+                android:singleLine="true"
+                style="@style/ItemName"
+                android:maxWidth="160dp"
+                android:layout_marginLeft="56dp"/>
+
+
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/topichome_item_avatar"
+                android:src="@drawable/icon_user"
+                android:minHeight="48dp"
+                android:maxHeight="48dp"
+                android:scaleType="fitCenter"
+                android:minWidth="48dp"
+                android:maxWidth="48dp"
+                android:padding="0dp"
+                android:layout_marginTop="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text222222222222222222222222222222"
+                android:id="@+id/topichome_item_content"
+                android:textColor="@color/text_dark"
+                android:textSize="12sp"
+                android:layout_below="@+id/topichome_item_username"
+                android:layout_alignLeft="@+id/topichome_item_username"
+
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"/>
+            <!--android:maxWidth="180dp"-->
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:adjustViewBounds="true"
+                android:clickable="false"
+
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/project_item_liked"
+                android:scaleType="fitEnd"
+                android:maxHeight="32dp"
+                android:maxWidth="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/topichome_item_date"
+                android:singleLine="true"
+                style="@style/ItemComment"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:maxWidth="160dp"
+
+                android:layout_marginBottom="0dp"/>
+            </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout_top"
+            android:layout_marginTop="10dp"
+            android:id="@+id/relativelayout2"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:id="@+id/topichome_spinner"
+                android:layout_toLeftOf="@+id/topichome_download_button"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="14dp"
+                android:layout_alignBottom="@+id/topichome_download_button"
+                android:drawingCacheQuality="high"
+                android:visibility="gone"
+                android:textAlignment="viewStart"
+                 />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:layout_marginRight="5dp"
+
+                android:src="@drawable/download_button"
+
+
+                android:id="@+id/topichome_download_button"
+                android:layout_alignParentRight="true"
+
+                android:clickable="true"
+                android:visibility="gone"/>
+            </RelativeLayout>
+
+        <ProgressBar
+            android:layout_width="fill_parent"
+            android:layout_marginTop="6dp"
+            android:layout_height="8dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:id="@+id/download_progress"
+            android:visibility="gone"
+            android:layout_below="@+id/relativelayout2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/download_progress_text"
+            android:layout_below="@+id/download_progress"
+            android:text=""
+            android:textSize="10sp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"/>
+
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/attachment_view"
+        android:layout_below="@+id/relativelayout_sub"
+        android:visibility="gone"
+        >
+
+        <com.innoxyz.InnoXYZAndroid.ui.customviews.InnerListView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/attachment_listview"/>
+
+
+        </LinearLayout>
+
+
+</RelativeLayout>

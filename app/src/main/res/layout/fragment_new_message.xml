@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.innoxyz.InnoXYZAndroid.ui.customviews.AutomaticWarpViewGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/new_message_checked_receivers">
+
+    </com.innoxyz.InnoXYZAndroid.ui.customviews.AutomaticWarpViewGroup>
+
+    <RelativeLayout
+        style="@style/ItemOuterLayout">
+
+        <RelativeLayout
+            style="@style/ItemInnerLayout">
+
+            <AutoCompleteTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/new_message_receiver"
+                android:layout_gravity="center_horizontal" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        style="@style/ItemOuterLayout">
+
+        <RelativeLayout
+            style="@style/ItemInnerLayout">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/new_message_subject"
+                android:layout_gravity="center_horizontal" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        style="@style/ItemOuterLayout">
+
+        <RelativeLayout
+            style="@style/ItemInnerLayout">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems = "10"
+                android:lines="10"
+                android:gravity="top"
+                android:id="@+id/new_message_content"
+                android:layout_gravity="center_horizontal" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

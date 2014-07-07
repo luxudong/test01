@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+      <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/text_blue"
+            android:id="@+id/linearLayout">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_project"
+                android:adjustViewBounds="true"
+                android:maxHeight="48dp"
+                android:padding="10dp"
+                android:scaleType="fitCenter"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text222222222222222"
+                android:id="@+id/taskhome_projectname"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/text_white"/>
+    </LinearLayout>
+
+      <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ItemOuterLayout"
+            android:layout_below="@+id/linearLayout"
+            android:id="@+id/task_home_main">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="创始人："
+                    android:id="@+id/task_home_creatorNameTitle"
+                    android:layout_gravity="bottom"
+                    style="@style/ItemName"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/task_home_creatorName"
+                    android:textColor="@color/text_dark"
+                    android:maxLength="20"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0.74" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/task_home_state"
+                    android:text="New Text"
+                    android:singleLine="true"
+                    android:textSize="10sp"
+                    android:textColor="@color/background_lightgray"
+                    android:background="@color/text_blue"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="4dp"
+                    android:password="false"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="4dp"
+                     />
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <TextView
+                    style="@style/ItemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分配给："
+                    android:id="@+id/task_home_assigneeTitle"
+                    android:layout_gravity="bottom"
+                    android:layout_alignLeft="@+id/task_home_creatorNameTitle"
+                   />
+
+                <TextView
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/task_home_assignees"
+                    android:textColor="@color/text_dark"
+                    android:layout_gravity="bottom"
+                    android:maxLength="15" />
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/ItemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="描　述："
+                    android:id="@+id/task_home_descTitle"
+                    android:layout_gravity="bottom"
+                    android:layout_alignLeft="@+id/task_home_creatorNameTitle"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/task_home_desc"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/text_dark"
+                    android:maxLines="4"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <TextView
+                    style="@style/ItemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="优先级："
+                    android:id="@+id/task_home_priorityTitle"
+                    android:layout_gravity="bottom"
+                    android:layout_below="@+id/task_home_desc"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/task_home_priority"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/text_dark"
+                    android:maxLength="15"
+                    android:singleLine="true"
+                    android:layout_weight="0.53" />
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <TextView
+                    style="@style/ItemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="截止日期："
+                    android:id="@+id/task_home_deadlineTitle"
+                    android:layout_gravity="bottom"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/task_home_deadline"
+                    android:textColor="@color/text_dark"
+                    android:maxLength="18"
+                    android:layout_gravity="bottom"
+                    />
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+      <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/taskhome_itemlist"
+        android:layout_below="@+id/task_home_main"
+        android:clickable="false"
+        android:divider="@color/none"
+        android:layout_marginTop="8dp"
+        android:layout_above="@+id/task_home_bottom"/>
+     <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/task_home_bottom"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:id="@+id/task_home_bottom_button">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:background="@drawable/clickable_background_blue"
+                android:clickable="true"
+                android:id="@+id/task_home_reply"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/icon_discusslist_white"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="48dp"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="回复任务"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_white"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:layout_weight="2"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_height="wrap_content"
+                android:layout_width="1dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:background="@drawable/clickable_background_blue"
+                android:clickable="true"
+                android:id="@+id/task_home_goto_project"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="前往所在项目"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/text_white"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:layout_weight="2"/>
+
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/icon_goto"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="48dp"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ItemOuterLayout">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/ItemInnerLayout">
+
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_dir"
+                android:id="@+id/imageView"
+                android:focusableInTouchMode="false"
+                />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/document_item_dirname"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6dp"
+                android:textStyle="bold"
+                android:layout_alignWithParentIfMissing="false"
+                android:textColor="@color/text_dark"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/document_item_dirname"
+            android:src="@drawable/icon_goto"
+            android:layout_alignParentRight="true"
+            android:maxHeight="12dp"
+            android:maxWidth="8dp"
+            android:adjustViewBounds="true"
+            android:clickable="false"
+            android:layout_centerVertical="true"
+            android:scaleType="fitEnd"
+            android:layout_marginRight="6dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:paddingTop="1dp"
+                android:background="@color/none"
+                android:clickable="true">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/clickable_background_gray">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/project_item_name"
+                android:singleLine="true"
+                android:layout_toRightOf="@+id/project_item_liked"
+                android:layout_toStartOf="@id/imageView"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:textSize="16sp"
+                android:textColor="@color/text_gray"
+                android:textStyle="bold"/>
+
+
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:adjustViewBounds="true"
+                android:clickable="false"
+                android:src="@drawable/icon_goto"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/project_item_liked"
+                android:scaleType="fitEnd"
+                android:maxHeight="12dp"
+                android:maxWidth="8dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"/>
+
+        <com.innoxyz.InnoXYZAndroid.ui.customviews.StarToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/project_item_liked"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                />
+    </RelativeLayout>
+</RelativeLayout>

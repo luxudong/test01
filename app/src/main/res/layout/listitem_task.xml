@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                style="@style/ItemOuterLayout">
+
+    <RelativeLayout
+            style="@style/ItemInnerLayout">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/task_item_status"
+                android:layout_alignParentLeft="false"
+                android:text="New Text"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="36dp"
+                android:layout_alignParentRight="true"
+                android:singleLine="true"
+                android:textSize="10sp"
+                android:textColor="@color/background_lightgray"
+                android:background="@color/text_blue"
+                android:paddingLeft="12dp"
+                android:paddingTop="4dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="4dp"
+                android:password="false"/>
+
+        <TextView
+                android:id="@+id/task_item_assignee"
+                android:text="New Text111111111111111111111111111111"
+                style="@style/ItemComment"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/task_item_duedate"
+                android:singleLine="true"
+                android:text="NewText"
+                android:textSize="10sp"
+                android:textColor="@color/text_gray"
+                android:layout_below="@+id/task_item_assignee"
+                android:layout_alignLeft="@+id/task_item_name"
+                />
+
+        <TextView
+                android:id="@+id/task_item_name"
+                android:text="New Text2222222222222222222222222222222222222"
+                android:maxWidth="250dp"
+                style="@style/ItemName"/>
+
+        <ImageView
+                android:src="@drawable/icon_goto"
+            android:maxWidth="8dp"
+
+                style="@style/ItemGotoIcon"/>
+    </RelativeLayout>
+</RelativeLayout>

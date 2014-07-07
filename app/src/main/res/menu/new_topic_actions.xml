@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action__newtopic"
+        android:icon="@drawable/add_thing"
+        android:title="新建讨论"
+        android:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#efeff4"
+    android:orientation="vertical" >
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarStyle="outsideOverlay"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:id="@+id/userhome_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="@drawable/preference_first_item" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="个人信息"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/userhome_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="@drawable/preference_item" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="个人文档"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/userhome_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="@drawable/preference_item" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="个人日历"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+
+
+            <!--   ********************************************************************   -->
+
+
+
+            <!--   ***********************************************************************   -->
+            <RelativeLayout
+                android:id="@+id/userhome_4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="@drawable/preference_first_item" >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="邀请用户"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="12dp"
+
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <!--   ***********************************************************************   -->
+            <RelativeLayout
+                android:id="@+id/userhome_5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="@drawable/preference_first_item" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="设置"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/userhome_6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="@drawable/preference_item" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="系统更新"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/userhome_7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="@drawable/preference_item" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="消息推送"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="12dp"
+
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/userhome_8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="@drawable/preference_item" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="注销登录"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+            <!--   ********************************************************************   -->
+
+            <RelativeLayout
+                android:id="@+id/userhome_9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:background="@drawable/preference_first_item" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="修改密码"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/userhome_10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/preference_item" >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="关于InnoXYZ"
+                    android:textSize="16sp"
+                    android:textColor="#000" />
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+
+                    android:src="@drawable/mm_submenu" />
+            </RelativeLayout>
+
+
+            <!--   ***********************************************************************   -->
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        style="@style/ItemOuterLayout">
+
+        <RelativeLayout
+            style="@style/ItemInnerLayout">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/new_task_name"
+                android:layout_gravity="center_horizontal" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            style="@style/ItemOuterLayout"
+            android:layout_weight="2">
+
+            <RelativeLayout
+                style="@style/ItemInnerLayout"
+                android:id="@+id/new_task_select_due_date">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="截止日期"
+                        android:layout_weight="0"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/new_task_due_date"
+                        android:text="@string/task_new_default_due_date"
+                        android:editable="false"
+                        android:textColor="@color/text_dark"
+                        android:layout_weight="2"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icon_date"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/ItemOuterLayout"
+            android:layout_weight="3">
+
+            <RelativeLayout
+                style="@style/ItemInnerLayout">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="优先级"
+                        android:layout_weight="1"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/new_task_priority"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/ItemOuterLayout">
+
+        <RelativeLayout
+            style="@style/ItemInnerLayout">
+
+            <com.innoxyz.InnoXYZAndroid.ui.customviews.MultiSelectSpinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/new_task_assigned"
+                android:layout_gravity="center_horizontal" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/ItemOuterLayout">
+
+        <RelativeLayout
+            style="@style/ItemInnerLayout">
+
+            <com.innoxyz.InnoXYZAndroid.ui.customviews.MultiSelectSpinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/new_task_connected"
+                android:layout_gravity="center_horizontal" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/ItemOuterLayout">
+
+        <RelativeLayout
+            style="@style/ItemInnerLayout">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems = "10"
+                android:lines="10"
+                android:gravity="top"
+                android:id="@+id/new_task_detail"
+                android:layout_gravity="center_horizontal" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
